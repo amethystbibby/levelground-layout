@@ -1,0 +1,183 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  height: 100%;
+  line-height: 1.5rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  height: 3rem;
+  background-color: rgb(102, 118, 138);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+footer {
+  height: 20rem;
+  background-color: rgb(22, 31, 42);
+}
+
+.focus {
+  background-color: rgb(102, 118, 138);
+  height: 2%;
+}
+
+section:not(.subsections){
+  width: 100%;
+  height: 15%;
+  padding: 10rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.subsections {
+  background-color: rgb(219, 223, 226);
+  height: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.subsections section {
+  width: 35%;
+}
+
+div {
+  background-color: rgb(102,118,138);
+  height: 15em;
+  width: 30rem;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  width: 80%;
+  line-height: 5rem;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h5 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  width: 25%;
+  text-align: center;
+  color: darkslategray;
+}
+
+.subsections p {
+  width: 90%;
+}
+
+.focus p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: white;
+  width: 60%;
+}
+
+a {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: darkslategray;
+  font-weight: bold;
+}
+
+li {
+  color: white;
+  padding-right: 2rem;
+}
+
+nav * {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/******************************************
+/* BUTTONS
+/*******************************************/
+a {
+  width: 15rem;
+  border: 1px solid darkslategray;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+nav a {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  padding: none;
+  margin: 0;
+  width: auto;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.focus a {
+  border: none;
+  font-family: sans-serif;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
